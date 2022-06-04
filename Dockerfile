@@ -1,7 +1,6 @@
 FROM python:3.8
 WORKDIR /app
 COPY . .
-RUN pip uninstall  Flask Jinja2
 RUN pip install Flask Jinja2
 RUN pip3 install numpy
 RUN pip freeze
